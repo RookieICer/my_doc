@@ -1,0 +1,22 @@
+<!DOCTYPE html ><html xml:lang="en" lang="en" data-highlight-require-whitespace="false" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><meta http-equiv="Content-Style-Type" content="text/css" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><title>Limitations</title><link rel="Prev" href="A_Support%20.13.7.html" title="Previous" /><link rel="StyleSheet" href="css/A_Support%20.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/skin.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/social.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" /><!--[if IE 7]><link rel="StyleSheet" href="css/A_Support%20_IE7.css" type="text/css" media="all" /><![endif]--><link rel="StyleSheet" href="css/print.css" type="text/css" media="print" /><script type="text/javascript">
+    'use strict';
+
+    var redirect_url, page_hash;
+
+    if ((window === window.top) && (window.navigator.userAgent.indexOf('bot/') === -1)) {
+        // Redirect
+        //
+        redirect_url = "../index.html#page/axi_svt_uvm_user_guide/A_Support%20.13.8.html";
+        if (window.document.location.hash.length > 1) {
+            // Sanitize and append it
+            //
+            page_hash = window.document.location.hash.substring(1);
+            page_hash = page_hash.replace(/[\\><:;"]|%5C|%3C|%3E|%3A|%3B|%22/gi, '');
+
+            // escape the '#' character
+            //
+            redirect_url += '%23' + page_hash;
+        }
+        window.document.location.replace(redirect_url);
+    }
+</script><script type="text/javascript" src="scripts/common.js"></script><script type="text/javascript" src="scripts/page.js"></script><script type="text/javascript" src="scripts/search-client.js"></script><script type="text/javascript" src="scripts/unidata.js"></script><script type="text/javascript" src="scripts/unibreak.js"></script><noscript><div id="noscript_padding"></div></noscript></head><body id="pTtmHsLDaTZiuupFRFQRyUg" class="ww_skin_page_body" onload="Page.OnLoad('../index.html#page/axi_svt_uvm_user_guide/A_Support%20.13.8.html');"><header id="wwconnect_header"><div class="ww_skin_breadcrumbs"><a class="WebWorks_Breadcrumb_Link" href="01_Intro.01.1.html">AXI UVM User Guide</a> : <a class="WebWorks_Breadcrumb_Link" href="A_Support%20.13.1.html#1082220"> Reporting Problems</a> : Limitations</div><div class="ww_skin_page_toolbar"><a class="ww_behavior_print ww_skin ww_skin_print" title="Print" href="#">&nbsp;</a><a class="ww_behavior_email ww_skin ww_skin_email" title="E-Mail" href="#" target="external_window">&nbsp;</a></div></header><div id="ww1082220" class="H2">Limitations</div><div id="ww1084468" class="Body"><span></span>Enabling DEBUG or VERBOSE verbosity is an expensive operation, both in terms of runtime and disk space utilization. The following steps can be used to minimize this cost:</div><div id="ww1084469" class="L1Bul"><span class="WebWorks_Number" style="width: 18pt"><span><img src="L1Bul.png" alt="*" border="0" width="9" height="8" /></span></span>Only enable the VIP instance necessary for debug. By default, the <span class="Code">+svt_debug_opts</span> command enables Debug Opts on all instances, but the '<span class="Code">inst</span>' argument can be used to select a specific instance.</div><div id="ww1082246" class="L1Bul"><span class="WebWorks_Number" style="width: 18pt"><span><img src="L1Bul.png" alt="*" border="0" width="9" height="8" /></span></span>Use the <span class="Code">start_time</span> and <span class="Code">end_time</span> arguments to limit the verbosity changes to the specific time window that needs to be debugged.</div><noscript><div id="noscript_warning">This site works best with JavaScript enabled</div></noscript><footer><!-- Related Topics --><!--                --><!-- Disqus --><!--        --><!-- Google Translation --><!--                    --><br /></footer><input type="hidden" id="preserve_unknown_file_links" value="false"></input></body></html>
